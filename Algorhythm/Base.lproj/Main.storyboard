@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlist Master View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -19,14 +19,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmN-gG-dnf">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="srK-Bk-f6P"/>
+                                    <segue destination="Kk0-3y-3gj" kind="modal" id="S7S-9N-zKB"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.21734572429999999" green="0.16866371499999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="lmN-gG-dnf" secondAttribute="centerY" id="OWa-rr-Yow"/>
                             <constraint firstAttribute="centerX" secondItem="lmN-gG-dnf" secondAttribute="centerX" id="VaV-M1-x8Z"/>
@@ -40,22 +41,24 @@
             </objects>
             <point key="canvasLocation" x="162.66666666666666" y="366.36000000000001"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="CIS-DS-E89">
+        <!--Playlist Detail View Controller-->
+        <scene sceneID="zyV-GM-tLF">
             <objects>
-                <viewController id="uoP-JL-8Vq" sceneMemberID="viewController">
+                <viewController id="Kk0-3y-3gj" customClass="PlaylistDetailViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BsH-ta-zZE"/>
-                        <viewControllerLayoutGuide type="bottom" id="WiG-vY-5X9"/>
+                        <viewControllerLayoutGuide type="top" id="Pa1-R0-gHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZUP-5R-wp5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kYS-3V-Eux">
+                    <view key="view" contentMode="scaleToFill" id="F5N-dt-Qy8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.42301708385182024" blue="0.97788938891511923" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PFg-Cy-WUk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bO3-AL-8ng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZR-xu-dD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="573" y="374"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
