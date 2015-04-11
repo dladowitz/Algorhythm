@@ -21,10 +21,14 @@
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="CsW-fJ-2Y6">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.84675697632088598" blue="0.35182109308683596" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="HpR-F8-dDl"/>
                                     <constraint firstAttribute="width" constant="200" id="WaX-uE-bsh"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rla-74-N16" appends="YES" id="Tjf-1Y-HlE"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.13974651575898403" green="0.12030828097412252" blue="0.23254024621212122" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,9 +37,6 @@
                             <constraint firstAttribute="centerY" secondItem="CsW-fJ-2Y6" secondAttribute="centerY" id="EkH-Vf-etT"/>
                             <constraint firstAttribute="centerX" secondItem="CsW-fJ-2Y6" secondAttribute="centerX" id="mdo-77-IZM"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="tp7-Wr-s5T" appends="YES" id="Sub-63-2zR"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="UqK-em-nCs"/>
                     <connections>
@@ -44,9 +45,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="tp7-Wr-s5T">
+                <tapGestureRecognizer id="rla-74-N16">
                     <connections>
-                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="yyX-VJ-z1j"/>
+                        <action selector="showPlaylistDetail:" destination="vXZ-lx-hvc" id="ztU-PF-Nww"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
