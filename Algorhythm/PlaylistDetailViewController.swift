@@ -17,6 +17,10 @@ class PlaylistDetailViewController: UIViewController {
     @IBOutlet weak var playlistArtist0: UILabel!
     @IBOutlet weak var playlistArtist1: UILabel!
     @IBOutlet weak var playlistArtist2: UILabel!
+    @IBOutlet weak var playlistArtist3: UILabel!
+    @IBOutlet weak var playlistArtist4: UILabel!
+    @IBOutlet weak var playlistArtist5: UILabel!
+    @IBOutlet weak var playlistArtist6: UILabel!
     
     var playlist = Playlist?()
     
@@ -31,6 +35,10 @@ class PlaylistDetailViewController: UIViewController {
             playlistArtist0.text     = playlist!.artists[0]
             playlistArtist1.text     = playlist!.artists[1]
             playlistArtist2.text     = playlist!.artists[2]
+            playlistArtist3.text     = playlist!.artists[3]
+            playlistArtist4.text     = playlist!.artists[4]
+            playlistArtist5.text     = playlist!.artists[5]
+            playlistArtist6.text     = playlist!.artists[6]
         }
     }
 
