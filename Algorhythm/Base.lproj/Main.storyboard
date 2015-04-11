@@ -16,8 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="CsW-fJ-2Y6">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.84675697632088598" blue="0.35182109308683596" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="HpR-F8-dDl"/>
+                                    <constraint firstAttribute="width" constant="200" id="WaX-uE-bsh"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmN-gG-dnf">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,10 +35,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.21734572429999999" green="0.16866371499999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="lmN-gG-dnf" secondAttribute="centerY" id="OWa-rr-Yow"/>
+                            <constraint firstItem="lmN-gG-dnf" firstAttribute="top" secondItem="CsW-fJ-2Y6" secondAttribute="bottom" constant="8" id="4HS-ZR-8Fa"/>
+                            <constraint firstAttribute="centerY" secondItem="CsW-fJ-2Y6" secondAttribute="centerY" id="EkH-Vf-etT"/>
                             <constraint firstAttribute="centerX" secondItem="lmN-gG-dnf" secondAttribute="centerX" id="VaV-M1-x8Z"/>
+                            <constraint firstAttribute="centerX" secondItem="CsW-fJ-2Y6" secondAttribute="centerX" id="mdo-77-IZM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="UqK-em-nCs"/>
@@ -95,6 +104,9 @@
             <point key="canvasLocation" x="162" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee" width="53" height="107"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
