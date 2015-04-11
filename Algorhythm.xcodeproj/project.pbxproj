@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		634E256C1AD8A8470008D9FF /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
 		634E256E1AD8AC700008D9FF /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		634E25701AD8AE5A0008D9FF /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		63809CE51AD6DEF5008E000F /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63809CE91AD6DEF5008E000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63809CEA1AD6DEF5008E000F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				63809CF11AD6DEF5008E000F /* Images.xcassets */,
 				63809CF31AD6DEF5008E000F /* LaunchScreen.xib */,
 				63809CE81AD6DEF5008E000F /* Supporting Files */,
+				634E25701AD8AE5A0008D9FF /* MyPlayground.playground */,
 			);
 			path = Algorhythm;
 			sourceTree = "<group>";
